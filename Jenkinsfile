@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'pwd'
-        sh 'whoami'
+        sh 'which node'
         sh 'npm install gitbook -g'
         sh 'apt-get update && apt-get install rsync -y'
       }
