@@ -9,7 +9,8 @@ pipeline {
     stage('Build') {
       steps {
         sh 'pwd'
-        sh 'which node'
+        sh '''
+echo $USER'''
         sh 'npm install gitbook-cli -g'
         sh 'apt-get update && apt-get install rsync -y'
         sh 'npm uninstall gitbook -g'
