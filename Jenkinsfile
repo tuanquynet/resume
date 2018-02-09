@@ -18,4 +18,7 @@ echo $USER'''
       }
     }
   }
+  environment {
+    HOME = '.'
+  }
 }
