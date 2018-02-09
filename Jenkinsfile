@@ -11,7 +11,7 @@ pipeline {
         sh 'pwd'
         sh '''
 echo $USER'''
-        sh 'npm install gitbook-cli -g'
+        sh 'npm install gitbook-cli'
         sh 'apt-get update && apt-get install rsync -y'
         sh 'npm uninstall gitbook -g'
       }
