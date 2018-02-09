@@ -11,6 +11,7 @@ pipeline {
       steps {
         sh 'pwd'
         sh 'npm install gitbook-cli -g'
+        sh 'apt-get update'
         sh 'apt-get install rsync -y'
       }
     }
