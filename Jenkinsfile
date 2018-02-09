@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'pwd'
-        sh 'sudo npm install gitbook-cli -g'
+        sh 'npm install gitbook-cli'
         sh 'sudo apt-get update && sudo apt-get install rsync -y'
       }
     }
