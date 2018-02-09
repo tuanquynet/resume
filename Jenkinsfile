@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:8.9.1'
-      args '-p 3000:3000'
+      args '-p 3000:3000 -u root:sudo'
     }
     
   }
